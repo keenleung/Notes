@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>UI 进阶_01 | storyboard文件的认识</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ui_03/README.html" />
+    
+    
+    <link rel="prev" href="../ui_day02/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="2" data-basepath=".." data-revision="1453972958891">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         UI 01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="ui_day02/README.html">
+            
+                
+                    <a href="../ui_day02/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         UI 02
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2" data-path="ui__01/README.html">
+            
+                
+                    <a href="../ui__01/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         UI 进阶_01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="ui_03/README.html">
+            
+                
+                    <a href="../ui_03/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         UI 03
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ui_04_uiscrollview/README.html">
+            
+                
+                    <a href="../ui_04_uiscrollview/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         UI 04 UIScrollView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ui_05_autolayout/README.html">
+            
+                
+                    <a href="../ui_05_autolayout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI 05 Autolayout
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >storyboard文件的认识</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1497">
+                    
+                        <h2 id="uipickerview">UIPickerView</h2>
+<ul>
+<li><p>数据源方法 UIPickerViewDataSource</p>
+<pre><code>  设置有多少组和每组有多少行
+</code></pre><ul>
+<li><p>-(<code>NSInteger</code>) <code>numberOfComponentsInPickerView</code>: (UIPickerView *)pickerView</p>
+<pre><code>  返回有多少组,即列数
+</code></pre></li>
+<li>-(<code>NSInteger</code>) <code>pickerView</code>: (UIPickerView *)pickerView   <code>numberOfRowsInComponent</code>:(NSInteger)component<pre><code>  返回每组有多少行
+</code></pre></li>
+</ul>
+</li>
+<li><p>代理方法 UIPickerViewDelegate</p>
+<pre><code>  设置每一行显示的方式,比如,显示文字或显示一个控件; 监听每组选中的行等.
+</code></pre><ul>
+<li>-(<code>NSString *</code>)pickerView: titleForRow: forComponent:<pre><code>  给每一行返回一个字符串
+</code></pre></li>
+<li><p>-(<code>UIView *</code>)pickerView: viewForRow: forComponent: reusingView:</p>
+<pre><code>  给每一行返回一个 View
+</code></pre><p>比如:</p>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#pragma mark - UIPickerView 的代理方法</span>
+-(<span class="hljs-built_in">UIView</span> *)pickerView:(UIPickerView *)pickerView viewForRow:(<span class="hljs-built_in">NSInteger</span>)row forComponent:(<span class="hljs-built_in">NSInteger</span>)component reusingView:(<span class="hljs-built_in">UIView</span> *)view{
+
+<span class="hljs-comment">// 如果有重用的 view, 会传一个 view 进来</span>
+FlagView *flagView = (FlagView *)view;
+<span class="hljs-keyword">if</span> (!flagView) {
+  flagView = [FlagView flagView];
+}
+
+<span class="hljs-comment">// 传递数据</span>
+Flag *flag = <span class="hljs-keyword">self</span><span class="hljs-variable">.flags</span>[row];
+flagView<span class="hljs-variable">.flag</span> = flag;
+
+<span class="hljs-comment">// 设置 frame</span>
+flagView<span class="hljs-variable">.bounds</span> = CGRectMake(-<span class="hljs-number">50</span>, <span class="hljs-number">0</span>, <span class="hljs-number">200</span>, <span class="hljs-number">0</span>);
+
+flagView<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> grayColor];
+
+<span class="hljs-keyword">return</span> flagView;
+}
+</code></pre>
+</li>
+<li><p>-(<code>void</code>) pickerView: didSelectRow: inComponent:</p>
+<pre><code>  监听每组选中的行,根据返回 行与组 的数据,获取或更改界面数据
+</code></pre><p>比如:可以设置选中 (i+1,i&gt;=0) 组的第一行</p>
+<pre><code class="lang-objc">[<span class="hljs-keyword">self</span> pickerView:<span class="hljs-keyword">self</span><span class="hljs-variable">.pickerView</span> didSelectRow:<span class="hljs-number">0</span> inComponent:i];
+</code></pre>
+</li>
+<li>-(<code>CGFloat</code>) pickerView: (UIPickerView *)pickerView  <code>rowHeightForComponent</code>: (NSInteger)component<pre><code>  返回行高
+</code></pre></li>
+</ul>
+</li>
+<li><p>常用方法</p>
+<ul>
+<li><p>selectedRowInComponent:</p>
+<pre><code>  获取指定组选择的行的下标
+</code></pre><p>比如: 实现随机获取每组的数据,但不能与之前的重复</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 总列数</span>
+<span class="hljs-built_in">NSInteger</span> column = <span class="hljs-keyword">self</span><span class="hljs-variable">.foods</span><span class="hljs-variable">.count</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-built_in">NSInteger</span> i= <span class="hljs-number">0</span>; i&lt; column; i++) {
+  <span class="hljs-comment">// 每一列共有多少行数据</span>
+  <span class="hljs-built_in">NSArray</span> *items = <span class="hljs-keyword">self</span><span class="hljs-variable">.foods</span>[i];
+  <span class="hljs-built_in">NSInteger</span> rowInColumn = items<span class="hljs-variable">.count</span>;
+  <span class="hljs-comment">// 在行范围内产生随机数</span>
+  <span class="hljs-built_in">NSInteger</span> randomRow = arc4random_uniform((<span class="hljs-keyword">int</span>)rowInColumn);
+
+  <span class="hljs-comment">// 每列选取的,不能与之前的一样</span>
+  <span class="hljs-comment">// 获取旧的数据</span>
+  <span class="hljs-built_in">NSInteger</span> oldRow = [<span class="hljs-keyword">self</span><span class="hljs-variable">.pickerView</span> selectedRowInComponent:i];
+  <span class="hljs-keyword">while</span> (randomRow == oldRow) {
+      randomRow = arc4random_uniform((<span class="hljs-keyword">int</span>)rowInColumn);
+  }
+
+  <span class="hljs-comment">// 更改 label 的数据</span>
+  [<span class="hljs-keyword">self</span> pickerView:<span class="hljs-keyword">self</span><span class="hljs-variable">.pickerView</span> didSelectRow:randomRow inComponent:i];
+  <span class="hljs-comment">// 更改 pickerView 中的数据</span>
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.pickerView</span> selectRow:randomRow inComponent:i animated:<span class="hljs-literal">YES</span>];
+}
+</code></pre>
+</li>
+<li><p>reloadComponent</p>
+<pre><code>  实现部分刷新
+</code></pre><p>比如:</p>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#pragma mark - 选中某一行</span>
+-(<span class="hljs-keyword">void</span>) pickerView:(UIPickerView *)pickerView didSelectRow:(<span class="hljs-built_in">NSInteger</span>)row inComponent:(<span class="hljs-built_in">NSInteger</span>)component{
+<span class="hljs-keyword">if</span> (component == <span class="hljs-number">0</span>) {
+  <span class="hljs-comment">// 更新省份索引</span>
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.indexOfProvince</span> = row;
+
+  <span class="hljs-comment">// 部分刷新</span>
+  [pickerView reloadComponent:<span class="hljs-number">1</span>];
+
+  <span class="hljs-comment">// 不管省份选取的是哪一个,城市显示的都是第一行</span>
+  <span class="hljs-comment">//[self pickerView:self.pickerView didSelectRow:0 inComponent:1];</span>
+  [pickerView selectRow:<span class="hljs-number">0</span> inComponent:<span class="hljs-number">1</span> animated:<span class="hljs-literal">YES</span>];
+}
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="uidatepicker">UIDatePicker</h2>
+<ul>
+<li>获取系统本地化方式<pre><code>  [NSLocale availableLocaleIdentifiers]
+</code></pre></li>
+<li>常用属性或方法<pre><code class="lang-objc">UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.datePicker</span> = datePicker;
+  <span class="hljs-comment">// 以当地时间方式显示</span>
+  datePicker<span class="hljs-variable">.locale</span> = [[NSLocale alloc] initWithLocaleIdentifier:<span class="hljs-string">@"zh"</span>];<span class="hljs-comment">// 中国的本地化标识是: zh</span>
+  <span class="hljs-comment">// 设置显示的时间格式</span>
+  datePicker<span class="hljs-variable">.datePickerMode</span> = UIDatePickerModeDate;<span class="hljs-comment">// 年月日</span>
+<span class="hljs-comment">//    datePicker.datePickerMode = UIDatePickerModeDateAndTime;年月日时分秒</span>
+</code></pre>
+</li>
+<li>案例: 选取选中的时间</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)viewDidLoad {
+    [<span class="hljs-keyword">super</span> viewDidLoad];
+
+    <span class="hljs-comment">// 打印当前可用的本地化标识</span>
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@"</span>,[NSLocale availableLocaleIdentifiers]);
+
+    <span class="hljs-comment">/****** UITextField */</span>
+    UITextField *textField = [[UITextField alloc] init];
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.textField</span> = textField;
+    [<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:textField];
+    <span class="hljs-comment">// 设置 frame</span>
+    textField<span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">0</span>, <span class="hljs-number">40</span>, <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.bounds</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span>, <span class="hljs-number">44</span>);
+    <span class="hljs-comment">// 设置 borderStyle</span>
+    textField<span class="hljs-variable">.borderStyle</span> = UITextBorderStyleRoundedRect;
+
+
+    <span class="hljs-comment">/***** UIDatePicker */</span>
+    UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.datePicker</span> = datePicker;
+    <span class="hljs-comment">// 以当地时间方式显示</span>
+    datePicker<span class="hljs-variable">.locale</span> = [[NSLocale alloc] initWithLocaleIdentifier:<span class="hljs-string">@"zh"</span>];<span class="hljs-comment">// 中国的本地化标识是: zh</span>
+    <span class="hljs-comment">// 设置显示的时间格式</span>
+    datePicker<span class="hljs-variable">.datePickerMode</span> = UIDatePickerModeDate;<span class="hljs-comment">// 年月日</span>
+<span class="hljs-comment">//    datePicker.datePickerMode = UIDatePickerModeDateAndTime;年月日时分秒</span>
+
+
+    <span class="hljs-comment">// 设置 textField 的键盘模式</span>
+    textField<span class="hljs-variable">.inputView</span> = datePicker;
+
+
+    <span class="hljs-comment">/***** Toolbar */</span>
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    <span class="hljs-comment">// 设置 toolbar 的 frame</span>
+    <span class="hljs-built_in">CGFloat</span> toolbarH = <span class="hljs-number">44</span>;
+    <span class="hljs-built_in">CGFloat</span> toolbarW = datePicker<span class="hljs-variable">.bounds</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span>;
+    <span class="hljs-built_in">CGFloat</span> toolbarY = CGRectGetMinY(datePicker<span class="hljs-variable">.frame</span>) - toolbarH;
+    toolbar<span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">0</span>, toolbarY, toolbarW, toolbarH);
+    <span class="hljs-comment">// 设置 toolbar 的背景色</span>
+    toolbar<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> grayColor];
+
+
+    <span class="hljs-comment">/***** 设置 textField 的 toolbar */</span>
+    textField<span class="hljs-variable">.inputAccessoryView</span> = toolbar;
+
+
+    <span class="hljs-comment">/***** 往 toolbar 中添加子控件 */</span>
+    <span class="hljs-built_in">UIBarButtonItem</span> *nextItem = [[<span class="hljs-built_in">UIBarButtonItem</span> alloc] initWithTitle:<span class="hljs-string">@"下一个"</span> style:UIBarButtonItemStylePlain target:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(nextBtnDidClicked)];
+
+    <span class="hljs-built_in">UIBarButtonItem</span> *preItem = [[<span class="hljs-built_in">UIBarButtonItem</span> alloc] initWithTitle:<span class="hljs-string">@"上一个"</span> style:UIBarButtonItemStylePlain target: <span class="hljs-literal">nil</span> action:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">UIBarButtonItem</span> *doneItem = [[<span class="hljs-built_in">UIBarButtonItem</span> alloc] initWithTitle:<span class="hljs-string">@"Done"</span> style:UIBarButtonItemStylePlain target:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(doneDidClicked)];
+
+    <span class="hljs-built_in">UIBarButtonItem</span> *fixedItem  = [[<span class="hljs-built_in">UIBarButtonItem</span> alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:<span class="hljs-literal">nil</span> action:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">UIBarButtonItem</span> *flexibleItem  = [[<span class="hljs-built_in">UIBarButtonItem</span> alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:<span class="hljs-literal">nil</span> action:<span class="hljs-literal">nil</span>];
+
+    toolbar<span class="hljs-variable">.items</span> = @[preItem, fixedItem, nextItem, flexibleItem, doneItem];
+}
+
+- (<span class="hljs-keyword">void</span>) nextBtnDidClicked{
+    <span class="hljs-comment">// 获取 datePicker 的时间</span>
+    <span class="hljs-built_in">NSDate</span> *pickerDate = <span class="hljs-keyword">self</span><span class="hljs-variable">.datePicker</span><span class="hljs-variable">.date</span>;
+
+    <span class="hljs-comment">//NSCalendar</span>
+    <span class="hljs-built_in">NSCalendar</span> *calendar = [<span class="hljs-built_in">NSCalendar</span> currentCalendar];
+    <span class="hljs-comment">// 截取年,月,日</span>
+    NSCalendarUnit unit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+    NSDateComponents *components = [calendar components:unit fromDate:pickerDate];
+    <span class="hljs-built_in">NSInteger</span> year = components<span class="hljs-variable">.year</span>;
+    <span class="hljs-built_in">NSInteger</span> month = components<span class="hljs-variable">.month</span>;
+    <span class="hljs-built_in">NSInteger</span> day = components<span class="hljs-variable">.day</span>;
+
+    <span class="hljs-comment">// NSDateFormatter</span>
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter<span class="hljs-variable">.dateFormat</span> = <span class="hljs-string">@"yyyy-MM-dd"</span>;
+
+    <span class="hljs-comment">// NSDate</span>
+    <span class="hljs-built_in">NSString</span> *dateString = [<span class="hljs-built_in">NSString</span> stringWithFormat:<span class="hljs-string">@"%zd-%zd-%zd"</span>,year + <span class="hljs-number">1</span>, month, day];
+    <span class="hljs-built_in">NSDate</span> *date = [dateFormatter dateFromString: dateString];
+
+    <span class="hljs-comment">// 设置 datePicker</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.datePicker</span><span class="hljs-variable">.date</span> = date;
+
+    <span class="hljs-comment">// 设置 textField</span>
+    [<span class="hljs-keyword">self</span> setTextFieldText];
+}
+
+- (<span class="hljs-keyword">void</span>) doneDidClicked{
+    <span class="hljs-comment">// 设置 textField</span>
+    [<span class="hljs-keyword">self</span> setTextFieldText];
+
+    <span class="hljs-comment">// 隐藏 datePicker</span>
+    [<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> endEditing:<span class="hljs-literal">YES</span>];
+}
+
+-(<span class="hljs-keyword">void</span>) setTextFieldText{
+    <span class="hljs-comment">// 获取 datePicker 的时间</span>
+    <span class="hljs-built_in">NSDate</span> *date = <span class="hljs-keyword">self</span><span class="hljs-variable">.datePicker</span><span class="hljs-variable">.date</span>;
+    <span class="hljs-comment">// 把时间显示在 textField 中</span>
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter<span class="hljs-variable">.dateFormat</span> = <span class="hljs-string">@"yyyy-MM-dd"</span>;
+    <span class="hljs-comment">//dateFormatter.dateFormat = @"yyyy-MM-dd hh-mm-ss";</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.textField</span><span class="hljs-variable">.text</span> = [dateFormatter stringFromDate:date];
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../ui_day02/README.html" class="navigation navigation-prev " aria-label="Previous page: UI 02"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ui_03/README.html" class="navigation navigation-next " aria-label="Next page: UI 03"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

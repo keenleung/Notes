@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>UI 04 UIScrollView | storyboard文件的认识</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ui_05_autolayout/README.html" />
+    
+    
+    <link rel="prev" href="../ui_03/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="4" data-basepath=".." data-revision="1453972958891">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         UI 01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="ui_day02/README.html">
+            
+                
+                    <a href="../ui_day02/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         UI 02
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="ui__01/README.html">
+            
+                
+                    <a href="../ui__01/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         UI 进阶_01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="ui_03/README.html">
+            
+                
+                    <a href="../ui_03/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         UI 03
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4" data-path="ui_04_uiscrollview/README.html">
+            
+                
+                    <a href="../ui_04_uiscrollview/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         UI 04 UIScrollView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ui_05_autolayout/README.html">
+            
+                
+                    <a href="../ui_05_autolayout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI 05 Autolayout
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >storyboard文件的认识</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1495">
+                    
+                        <h2 id="uiscrollview">UIScrollView的基本使用</h2>
+<ul>
+<li><p>contentSize：设置内容尺寸(滚动的范围)</p>
+<pre><code>  可滚动的尺寸:contentSize的尺寸 减去 scrollView的尺寸
+  注意点:contentSize的尺寸小于或者等于scrollView的尺寸也是不可以滚动的
+</code></pre><pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.contentSize</span> = CGSizeMake(<span class="hljs-number">301</span>, <span class="hljs-number">201</span>);
+</code></pre>
+</li>
+<li><p>contentOffset：内容的偏移量</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 3.内容的偏移量</span>
+  <span class="hljs-comment">// 控制内容滚动的位置</span>
+  <span class="hljs-comment">// 得知内容滚动的位置</span>
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.contentOffset</span> = CGPointMake(<span class="hljs-number">0</span>, -<span class="hljs-number">100</span>);
+</code></pre>
+</li>
+<li>contentInset：内边距<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.contentInset</span> = UIEdgeInsetsMake(<span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+</code></pre>
+</li>
+</ul>
+<ul>
+<li>clipsToBounds：默认设置了剪裁属性为YES<pre><code>  self.scrollView.clipsToBounds = YES;
+</code></pre></li>
+<li>scrollEnabled： 是否能够滚动<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.scrollEnabled</span> = <span class="hljs-literal">NO</span>;
+</code></pre>
+</li>
+<li><p>userInteractionEnabled：是否能跟用户交互</p>
+<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.userInteractionEnabled</span> = <span class="hljs-literal">NO</span>;
+</code></pre>
+<p>注意点:如果设置该属性为NO，scrollView以及它所有的子控件都不能跟用户交互
+<br /></p>
+</li>
+<li><p>bounces： 是否有弹簧效果</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// 3.是否有弹簧效果</span>
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.bounces</span> = <span class="hljs-literal">NO</span>;
+
+  <span class="hljs-comment">// 4.不管有没有设置contentSize,总是有弹簧效果</span>
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.alwaysBounceHorizontal</span> = <span class="hljs-literal">YES</span>;
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.alwaysBounceVertical</span> = <span class="hljs-literal">YES</span>;
+</code></pre>
+</li>
+<li><p>showsHorizontalScrollIndicator, showsVerticalScrollIndicator: 是否显示滚动条</p>
+<pre><code class="lang-objc">   <span class="hljs-comment">// 5.是否显示滚动条</span>
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.showsHorizontalScrollIndicator</span> = <span class="hljs-literal">NO</span>;
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.showsVerticalScrollIndicator</span> = <span class="hljs-literal">NO</span>;
+</code></pre>
+</li>
+<li><p>pagingEnabled：开启分页</p>
+<ul>
+<li>标准：以scrollView的尺寸为一页</li>
+<li>例子：<pre><code class="lang-objc"><span class="hljs-comment">// 3.开启分页功能</span>
+<span class="hljs-comment">// 标准:以scrollView的尺寸为一页</span>
+<span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.pagingEnabled</span> = <span class="hljs-literal">YES</span>;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="">代理</h4>
+<p>需要遵守UIScrollViewDelegate协议及设计代理：</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 4.设置代理</span>
+    scrollView<span class="hljs-variable">.delegate</span> = <span class="hljs-keyword">self</span>;
+</code></pre>
+<p>常用的代理方法：</p>
+<ul>
+<li><p>-(void)<code>scrollViewDidScroll</code>:(UIScrollView *)scrollView;</p>
+<pre><code>  当scrollView正在滚动的时候就会自动这个方法
+</code></pre></li>
+<li><p>-(void)<code>scrollViewWillBeginDragging</code>:(UIScrollView *)scrollView</p>
+<pre><code>  用户即将开始拖拽scrollView时,就会调用这个方法
+</code></pre></li>
+<li><p>-(void)<code>scrollViewWillEndDragging</code>:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity</p>
+<pre><code>  用户即将停止拖拽scrollView时,就会调用这个方法
+</code></pre></li>
+<li><p>-(void)<code>scrollViewDidEndDragging</code>:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate</p>
+<pre><code>  用户已经停止拖拽scrollView时,就会调用这个方法
+</code></pre></li>
+<li><p>-(void)<code>scrollViewDidEndDecelerating</code>:(UIScrollView *)scrollView</p>
+<pre><code>  减速完毕的时候回调用这个方法(停止滚动)
+</code></pre></li>
+<li><p>-(UIView <em>)<code>viewForZoomingInScrollView</code>:(UIScrollView </em>)scrollView</p>
+<pre><code>  利用手势，实现内容缩放
+</code></pre></li>
+</ul>
+<pre><code class="lang-objc"> <span class="hljs-comment">//  返回一个需要缩放的子控件(scrollView)</span>
+- (<span class="hljs-built_in">UIView</span> *)viewForZoomingInScrollView:(<span class="hljs-built_in">UIScrollView</span> *)scrollView
+{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span>;
+}
+</code></pre>
+<p><strong>需要设置缩放比例</strong>：</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 3.设置缩放比例</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.maximumZoomScale</span> = <span class="hljs-number">2.0</span>;
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.scrollView</span><span class="hljs-variable">.minimumZoomScale</span> = <span class="hljs-number">0.5</span>;
+</code></pre>
+<h2 id="">定时器</h2>
+<p>创建定时器：</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 创建一个自动执行任务的定时器</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.timer</span> = [NSTimer scheduledTimerWithTimeInterval:<span class="hljs-number">2.0</span> target:<span class="hljs-keyword">self</span> selector:<span class="hljs-keyword">@selector</span>(nextPage:) userInfo:<span class="hljs-string">@"123"</span> repeats:<span class="hljs-literal">YES</span>];
+
+    <span class="hljs-comment">// NSDefaultRunLoopMode(默认):同一时间只能执行一个任务</span>
+    <span class="hljs-comment">// NSRunLoopCommonModes(通用):可以分配一定的时间处理其他任务</span>
+
+    <span class="hljs-comment">// 作用:修改timer在runLoop中的模式为NSRunLoopCommonModes;</span>
+    <span class="hljs-comment">// 目的:不管主线程在做什么操作,都会分配一定的时间处理timer</span>
+    [[NSRunLoop mainRunLoop] addTimer:<span class="hljs-keyword">self</span><span class="hljs-variable">.timer</span> forMode:NSRunLoopCommonModes];
+</code></pre>
+<p>停止定时器：</p>
+<pre><code class="lang-objc">    [<span class="hljs-keyword">self</span><span class="hljs-variable">.timer</span> invalidate];
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../ui_03/README.html" class="navigation navigation-prev " aria-label="Previous page: UI 03"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ui_05_autolayout/README.html" class="navigation navigation-next " aria-label="Next page: UI 05 Autolayout"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

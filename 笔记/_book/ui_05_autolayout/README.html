@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>UI 05 Autolayout | storyboard文件的认识</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../ui_04_uiscrollview/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="5" data-basepath=".." data-revision="1453972958891">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         UI 01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="ui_day02/README.html">
+            
+                
+                    <a href="../ui_day02/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         UI 02
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="ui__01/README.html">
+            
+                
+                    <a href="../ui__01/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         UI 进阶_01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="ui_03/README.html">
+            
+                
+                    <a href="../ui_03/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         UI 03
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ui_04_uiscrollview/README.html">
+            
+                
+                    <a href="../ui_04_uiscrollview/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         UI 04 UIScrollView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5" data-path="ui_05_autolayout/README.html">
+            
+                
+                    <a href="../ui_05_autolayout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI 05 Autolayout
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >storyboard文件的认识</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1496">
+                    
+                        <h2 id="">获取屏幕宽度</h2>
+<p>以前为了适配屏幕宽度,可能会这样处理:</p>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#define ScreenW [UIScreen mainScreen].bounds.size.width</span>
+<span class="hljs-preprocessor">#define ScreenH [UIScreen mainScreen].bounds.size.height</span>
+<span class="hljs-comment">// 创建一个显示在屏幕右下角的按钮</span>
+<span class="hljs-built_in">CGFloat</span> buttonW = <span class="hljs-number">100</span>;
+<span class="hljs-built_in">CGFloat</span> buttonH = <span class="hljs-number">50</span>;
+button<span class="hljs-variable">.frame</span> = CGRectMake(ScreenW - buttonW, ScreenH - buttonH, buttonW, buttonH);
+</code></pre>
+<h2 id="autoresizing">Autoresizing</h2>
+<ul>
+<li><p>与 Autolayout 对比:</p>
+<ul>
+<li>Autoresizing仅仅能解决子控件和父控件之间的相对关系问题</li>
+<li>Autolayout解决任何控件之间的相对关系问题</li>
+</ul>
+</li>
+<li><p>使用前,需要将 Auto Layout 设置为 no
+<img src="images/Snip20160128_9.png" alt="显示图片"></p>
+</li>
+<li><p><code>autoresizingMask</code>:设置自动调整</p>
+<ul>
+<li>UIViewAutoresizingFlexible<code>LeftMargin</code><ul>
+<li>距离父控件的左边是可以伸缩的</li>
+</ul>
+</li>
+<li>UIViewAutoresizingFlexible<code>BottomMargin</code><ul>
+<li>距离父控件的底部是可以伸缩的</li>
+</ul>
+</li>
+<li>UIViewAutoresizingFlexible<code>RightMargin</code><ul>
+<li>距离父控件的右边是可以伸缩的</li>
+</ul>
+</li>
+<li>UIViewAutoresizingFlexible<code>TopMargin</code><ul>
+<li>距离父控件的顶部是可以伸缩的<hr /></li>
+</ul>
+</li>
+<li>UIViewAutoresizingFlexible<code>Height</code><ul>
+<li>高度跟随父控件的高度进行伸缩</li>
+</ul>
+</li>
+<li>UIViewAutoresizingFlexible<code>Width</code><ul>
+<li>宽度跟随父控件的宽度进行伸缩</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>例子:</p>
+<pre><code class="lang-objc">    <span class="hljs-built_in">UIView</span> *redView = [[<span class="hljs-built_in">UIView</span> alloc] init];
+    redView<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> redColor];
+    <span class="hljs-built_in">CGFloat</span> redViewX = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> - <span class="hljs-number">100</span>;
+    <span class="hljs-built_in">CGFloat</span> redViewY = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> - <span class="hljs-number">100</span>;
+    redView<span class="hljs-variable">.frame</span> = CGRectMake(redViewX, redViewY, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+    redView<span class="hljs-variable">.autoresizingMask</span> = UIVeiewAutoresizingFlexibleLeftMargin |
+                            UIViewAutoresizingFlexibleTopMargin |
+                            UIViewAutoresizingFlexibleWidth;
+</code></pre>
+<h2 id="autolayout">Autolayout</h2>
+<ul>
+<li><p><strong>核心概念</strong></p>
+<ul>
+<li><code>约束</code>:通过给控件添加约束,来决定控件的位置和尺寸</li>
+<li><code>参照</code>:在添加约束时,是依照谁来添加(可以是父控件或者兄弟控件)</li>
+</ul>
+</li>
+<li><p>代码实现 Autolayout 时的<strong>注意点</strong>:</p>
+<ul>
+<li><p>要先禁止autoresizing功能，设置view的下面属性为NO</p>
+<pre><code class="lang-objc">view<span class="hljs-variable">.translatesAutoresizingMaskIntoConstraints</span> = <span class="hljs-literal">NO</span>;
+</code></pre>
+</li>
+<li>不用再给view设置frame</li>
+</ul>
+</li>
+<li><p>Autolayout 的核心<strong>计算公式</strong>:</p>
+<pre><code>  obj1.property1 =（obj2.property2 * multiplier）+ constant value
+</code></pre><p><img src="images/Snip20160128_12.png" alt="显示图片">
+<br /><br />注意:<br />
+优先级默认是1000.<br />
+案例:通过 Autolayout 实现动画时候,如果删除中间的那个,第3个向第1个靠拢,则需要设置第3个和第1个的间距,并调小优先级
+<img src="images/Snip20160128_13.png" alt="显示图片"></p>
+</li>
+<li><p><strong>仅作了解</strong></p>
+<ul>
+<li><p><code>添加约束的规则</code></p>
+<ul>
+<li><p>对于两个同层级view之间的约束关系，添加到它们的父view上
+<img src="images/图片 1.png" alt="显示图片"></p>
+</li>
+<li><p>对于两个不同层级view之间的约束关系，添加到他们最近的共同父view上
+<img src="images/图片 2.png" alt="显示图片"></p>
+</li>
+<li>对于有层次关系的两个view之间的约束关系，添加到层次较高的父view上
+<img src="images/图片 3.png" alt="显示图片"></li>
+</ul>
+</li>
+<li><p><code>VFL</code></p>
+<ul>
+<li>Visual Format Language, 可视化格式语言</li>
+<li>VFL是苹果公司为了简化Autolayout的编码而推出的抽象语言</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>有了 Autolayout 的 UILabel</code></p>
+<ul>
+<li>在没有Autolayout之前，UILabel的文字内容总是居中显示，导致顶部和底部会有一大片空缺区A域
+<img src="images/图片 4.png" alt="显示图片"></li>
+<li>有Autolayout之后，UILabel的bounds默认会自动包住所有的文字内容，顶部和底部不再会有空缺区域</li>
+<li><img src="images/图片 5.png" alt="显示图片"></li>
+</ul>
+</li>
+<li><p><strong>基于Autolayout的动画</strong></p>
+<ul>
+<li><p>在修改了约束之后，只要执行下面代码，就能做动画效果(约束)</p>
+<pre><code>  [UIView animateWithDuration:1.0 animations:^{
+      [添加了约束的view的父控件 layoutIfNeeded];
+  }];
+</code></pre><p>例子:</p>
+<pre><code class="lang-objc">  - (<span class="hljs-keyword">void</span>)touchesBegan:(<span class="hljs-built_in">NSSet</span>&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event
+  {
+      <span class="hljs-comment">// 修改约束</span>
+      <span class="hljs-keyword">self</span><span class="hljs-variable">.redViewWLc</span><span class="hljs-variable">.constant</span> = <span class="hljs-number">50</span>;
+
+      [<span class="hljs-built_in">UIView</span> animateWithDuration:<span class="hljs-number">2.0</span> animations:^{
+          <span class="hljs-comment">// 强制刷新</span>
+          [<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> layoutIfNeeded];
+      }];
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="masonry-">Masonry 框架</h2>
+<p>目前最流行的Autolayout第三方框架</p>
+<ul>
+<li><p>无需禁止autoresizing功能,因为它已经帮我们做好了
+<img src="images/Snip20160128_14.png" alt="显示图片"></p>
+</li>
+<li><p>使用的时候,一般都要引入宏:</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">//define this constant if you want to use Masonry without the 'mas_' prefix</span>
+  <span class="hljs-preprocessor">#define MAS_SHORTHAND</span>
+
+  <span class="hljs-comment">//define this constant if you want to enable auto-boxing for default syntax</span>
+  <span class="hljs-preprocessor">#define MAS_SHORTHAND_GLOBALS</span>
+</code></pre>
+<p>查找位置:Examples/Masonry\ iOS\ Examples/Masonry\ iOS\ Examples-Prefix.pch
+<img src="images/Snip20160128_16.png" alt="显示图片">
+说明:<br /></p>
+<ul>
+<li><p><strong>#define MAS_SHORTHAND</strong><br /></p>
+<pre><code>  默认,使用属性时,都需要加上mas_属性,比如:mas_width,引入#define MAS_SHORTHAND宏之后, 可以简写为: width
+</code></pre></li>
+<li><p><strong>#define MAS_SHORTHAND_GLOBALS</strong><br /></p>
+<ul>
+<li>默认情况下<ul>
+<li>mas_equalTo有自动包装功能，比如自动将20包装
+为@20</li>
+<li>equalTo没有自动包装功能</li>
+</ul>
+</li>
+<li>添加了#define MAS_SHORTHAND_GLOBALS 宏之后,mas_equalTo和equalTo就没有区别了</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>注意</strong>:
+<strong><em><code>要使用宏使,必须在引入#import &quot;Masonry.h&quot;之前添加</code></em></strong></p>
+<ul>
+<li><p>可有可无的用法:只是为了提供阅读性</p>
+<pre><code class="lang-objc">  - (MASConstraint *)with {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+  }
+
+  - (MASConstraint *)and {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+  }
+</code></pre>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../ui_04_uiscrollview/README.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: UI 04 UIScrollView"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

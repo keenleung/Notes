@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>UI 02 | storyboard文件的认识</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ui__01/README.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1" data-basepath=".." data-revision="1453972958891">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         UI 01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1" data-path="ui_day02/README.html">
+            
+                
+                    <a href="../ui_day02/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         UI 02
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="ui__01/README.html">
+            
+                
+                    <a href="../ui__01/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         UI 进阶_01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="ui_03/README.html">
+            
+                
+                    <a href="../ui_03/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         UI 03
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ui_04_uiscrollview/README.html">
+            
+                
+                    <a href="../ui_04_uiscrollview/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         UI 04 UIScrollView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ui_05_autolayout/README.html">
+            
+                
+                    <a href="../ui_05_autolayout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI 05 Autolayout
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >storyboard文件的认识</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1498">
+                    
+                        <h2 id="">实现毛玻璃效果</h2>
+<ul>
+<li>做法:<pre><code>  -往 UIImageView 中添加 UIToolbara 即可
+</code></pre></li>
+<li><p>示例代码:</p>
+<pre><code class="lang-objc">  <span class="hljs-built_in">UIImageView</span> *imageView = [[<span class="hljs-built_in">UIImageView</span> alloc] init];
+  imageView<span class="hljs-variable">.frame</span> = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.bounds</span>;
+  imageView<span class="hljs-variable">.image</span> = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"1"</span>];
+  <span class="hljs-comment">// 设置图片的内容模式</span>
+  imageView<span class="hljs-variable">.contentMode</span> = UIViewContentModeScaleAspectFill;
+
+  <span class="hljs-comment">// 1.5 设置毛玻璃</span>
+  UIToolbar *toolBar = [[UIToolbar alloc] init];
+  toolBar<span class="hljs-variable">.frame</span> = imageView<span class="hljs-variable">.bounds</span>;
+  <span class="hljs-comment">// 1.6 设置工具栏的样式</span>
+  toolBar<span class="hljs-variable">.barStyle</span> = UIBarStyleBlack;
+  <span class="hljs-comment">// 1.7 设置透明度</span>
+  toolBar<span class="hljs-variable">.alpha</span> = <span class="hljs-number">0.98</span>;
+
+  [imageView addSubview:toolBar];
+</code></pre>
+</li>
+</ul>
+<p><br /></p>
+<h2 id="uilabel">UILabel</h2>
+<ul>
+<li><p>常用属性</p>
+<pre><code>  显示的文字
+  @property(nonatomic,copy)   NSString *text;
+
+  字体
+  @property(nonatomic,retain) UIFont  *font;
+
+  文字颜色
+  @property(nonatomic,retain) UIColor *textColor;
+
+  对齐模式（比如左对齐、居中对齐、右对齐）
+  @property(nonatomic) NSTextAlignment textAlignment;
+
+  文字行数
+  @property(nonatomic) NSInteger numberOfLines;
+
+  换行模式
+  @property(nonatomic) NSLineBreakMode lineBreakMode;
+</code></pre></li>
+<li><p>示例代码</p>
+<pre><code class="lang-objc">  <span class="hljs-built_in">UILabel</span> *label = [[<span class="hljs-built_in">UILabel</span> alloc] init];
+  label<span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">200</span>, <span class="hljs-number">150</span>);
+  label<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> purpleColor];
+  <span class="hljs-comment">// 设置文字</span>
+  label<span class="hljs-variable">.text</span> = <span class="hljs-string">@"Hello World!Hello World!Hello World!Hello World!"</span>;
+  <span class="hljs-comment">// 设置对齐方式</span>
+  label<span class="hljs-variable">.textAlignment</span> = NSTextAlignmentCenter;
+  <span class="hljs-comment">// 设置文字的颜色</span>
+  label<span class="hljs-variable">.textColor</span> = [<span class="hljs-built_in">UIColor</span> yellowColor];
+  <span class="hljs-comment">// 设置字体的大小</span>
+  label<span class="hljs-variable">.font</span> = [<span class="hljs-built_in">UIFont</span> systemFontOfSize:<span class="hljs-number">20</span>];
+  label<span class="hljs-variable">.font</span> = [<span class="hljs-built_in">UIFont</span> boldSystemFontOfSize:<span class="hljs-number">20</span>];
+  label<span class="hljs-variable">.font</span> = [<span class="hljs-built_in">UIFont</span> italicSystemFontOfSize:<span class="hljs-number">20</span>];
+  <span class="hljs-comment">// 设置行模式</span>
+  label<span class="hljs-variable">.lineBreakMode</span> = NSLineBreakByTruncatingMiddle;
+  <span class="hljs-comment">// 1.9 自动换行 ---&gt; 0自动换行</span>
+  label<span class="hljs-variable">.numberOfLines</span> = <span class="hljs-number">0</span>;
+  <span class="hljs-comment">//  设置阴影</span>
+  label<span class="hljs-variable">.shadowColor</span> = [<span class="hljs-built_in">UIColor</span> redColor];
+  <span class="hljs-comment">// 设置偏移量</span>
+  label<span class="hljs-variable">.shadowOffset</span> = CGSizeMake(-<span class="hljs-number">2</span>, <span class="hljs-number">2</span>);
+</code></pre>
+</li>
+</ul>
+<h2 id="uiimageview">UIImageView</h2>
+<ul>
+<li><p>常用属性</p>
+<pre><code>  显示的图片
+  @property(nonatomic,retain) UIImage *image;
+
+  显示的动画图片
+  @property(nonatomic,copy) NSArray *animationImages;
+
+  动画图片的持续时间
+  @property(nonatomic) NSTimeInterval animationDuration;
+
+  动画的播放次数（默认是0，代表无限播放
+  @property(nonatomic) NSInteger animationRepeatCount;
+
+  图片的内容模式
+  @property(nonatomic) UIViewContentMode contentMode;
+</code></pre><ul>
+<li><p>contentMode 内容模式的值有:</p>
+<ul>
+<li><p>带Scale单词: 表明图片有可能被拉伸或者压缩(变形)
+<code>UIViewContentModeScaleToFill</code>,<br>
+特点：
+将图片拉伸至填充整个imageView
+图片显示的尺寸跟imageView的尺寸是一样的</p>
+</li>
+<li><p>带有Aspect单词: 会等比例缩放图片(不会变形)
+<code>UIViewContentModeScaleAspectFit</code>, <br> fit:自适应,特点：保证刚好能看到图片的全部
+<code>UIViewContentModeScaleAspectFill</code>, <br> fill:填充,特点：拉伸至图片的宽度或者高度跟imageView一样</p>
+</li>
+<li><p>不带Scale单词: 表明图片不可能被拉伸或者压缩(变形)
+UIViewContentModeCenter,<br>
+UIViewContentModeTop,<br>
+UIViewContentModeBottom,<br>
+UIViewContentModeLeft,<br>
+UIViewContentModeRight,<br>
+UIViewContentModeTopLeft,<br>
+UIViewContentModeTopRight,<br>
+UIViewContentModeBottomLeft,<br>
+UIViewContentModeBottomRight<br></p>
+</li>
+</ul>
+</li>
+<li><p>示例代码:</p>
+<pre><code class="lang-objc"><span class="hljs-built_in">UIImageView</span> *imageView = [[<span class="hljs-built_in">UIImageView</span> alloc] init];
+imageView<span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">20</span>, <span class="hljs-number">50</span>, <span class="hljs-number">200</span>, <span class="hljs-number">150</span>);
+imageView<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> redColor];
+imageView<span class="hljs-variable">.image</span> = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"1"</span>];
+<span class="hljs-comment">// 设置图片的内容模式</span>
+imageView<span class="hljs-variable">.contentMode</span> = UIViewContentModeScaleAspectFill;
+
+<span class="hljs-comment">// 裁剪超出的内容</span>
+imageView<span class="hljs-variable">.clipsToBounds</span> = <span class="hljs-literal">YES</span>;
+
+<span class="hljs-comment">// 加入</span>
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:imageView];
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>常用方法<pre><code>  - (void)startAnimating; // 开始动画
+  - (void)stopAnimating; // 停止动画
+  - (BOOL)isAnimating; // 是否正在执行动画
+</code></pre></li>
+</ul>
+<h2 id="uiimage">UIImage</h2>
+<ul>
+<li><p><strong>资源存放问题</strong></p>
+<ul>
+<li><p>图片的<strong>加载方式</strong>:</p>
+<ul>
+<li>方式1:  <code>imageNamed:</code></li>
+<li>方式2:  <code>imageWithContentsOfFile:</code></li>
+</ul>
+</li>
+<li><p>存放在<code>Assets.xcassets</code>:</p>
+<ul>
+<li>1.在资源包中对应的是Assets.car</li>
+<li>2.放到Assets.xcassets中的图片是无法获取到路径</li>
+<li>3.只能通过imageNamed:这种方式来加载图片</li>
+<li>4.不能通过imageWithContentsOfFile:这种方式来加载图片</li>
+</ul>
+</li>
+<li><p>放到<code>项目目录</code>中:</p>
+<ul>
+<li>1.图片资源会被打包到MainBundle中</li>
+<li>2.能够获取到图片的路径</li>
+<li>3.能通过imageWithContentsOfFile:这种方式来加载图片</li>
+<li>4.也能通过imageNamed:这种方式来加载图片</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>内存分析</strong></p>
+<ul>
+<li><code>imageNamed:</code><ul>
+<li>加载图片,就算没有强指针指向,也不会从内存中被干掉 (默认带有缓存)</li>
+</ul>
+</li>
+<li><p><code>imageWithContentFile:</code></p>
+<ul>
+<li>加载图片,如果没有强指针指向,就会被从内存中被干掉 (默认不带有缓存)</li>
+</ul>
+</li>
+<li><p><code>放到Assets.xcassets中的图片默认就带有缓存</code></p>
+</li>
+</ul>
+<ul>
+<li>使用场景:<ul>
+<li>imageNamed: 1)图片经常会被使用  2)少量的图片</li>
+<li>imageWithContentFile: 1)图片不经常被使用  2)大批量的图片</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="">播放音效</h2>
+<ul>
+<li>头文件<pre><code>  &lt;AVFoundation/AVFoundation.h&gt;
+</code></pre></li>
+<li><p>示例代码</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 1.2 创建播放器</span>
+  <span class="hljs-built_in">NSString</span> *path = [[<span class="hljs-built_in">NSBundle</span> mainBundle] pathForResource:<span class="hljs-string">@"mySong1.mp3"</span> ofType:<span class="hljs-literal">nil</span>];
+  <span class="hljs-built_in">NSURL</span> *url = [<span class="hljs-built_in">NSURL</span> fileURLWithPath:path];
+  AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:url];
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.player</span> = [[AVPlayer alloc] initWithPlayerItem:playerItem];
+
+  <span class="hljs-comment">// 1.3 播放</span>
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.player</span> play];
+</code></pre>
+</li>
+</ul>
+<h2 id="">资源拖放操作说明</h2>
+<ul>
+<li>Copy items if needed:<pre><code>  勾上,复制资源到项目;不勾,添加的只是资源的链接
+</code></pre></li>
+<li>Create group<pre><code>  若拖放的是一个文件夹,则会创建虚拟的文件夹,实际上使不存在的.默认,文件都是等级别的.文件夹颜色为黄色.
+</code></pre></li>
+<li>Create folder references<pre><code>  若拖放的是一个文件夹,则会创建真实的文件夹.文件夹颜色为蓝色.
+</code></pre><img src="../Images/02/Snip20160120_12.png" alt="显示图片">
+<img src="../Images/02/Snip20160120_13.png" alt="显示图片"></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: UI 01"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ui__01/README.html" class="navigation navigation-next " aria-label="Next page: UI 进阶_01"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

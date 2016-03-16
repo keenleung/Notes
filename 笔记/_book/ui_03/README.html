@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>UI 03 | storyboard文件的认识</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ui_04_uiscrollview/README.html" />
+    
+    
+    <link rel="prev" href="../ui__01/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1453972958891">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         UI 01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="ui_day02/README.html">
+            
+                
+                    <a href="../ui_day02/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         UI 02
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="ui__01/README.html">
+            
+                
+                    <a href="../ui__01/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         UI 进阶_01
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3" data-path="ui_03/README.html">
+            
+                
+                    <a href="../ui_03/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         UI 03
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ui_04_uiscrollview/README.html">
+            
+                
+                    <a href="../ui_04_uiscrollview/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         UI 04 UIScrollView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ui_05_autolayout/README.html">
+            
+                
+                    <a href="../ui_05_autolayout/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         UI 05 Autolayout
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >storyboard文件的认识</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_1494">
+                    
+                        <h2 id="uiview-">自定义控件(UIView 作为父控件)</h2>
+<ul>
+<li>当外部调用<code>init</code>方法的时候,系统会默认调用<code>initWithFrame</code>:<pre><code>  所以,当重写 init 方法后,又需要重写 initWithFrame 时,只需要重写 initWithFrame 即可
+</code></pre></li>
+</ul>
+<ul>
+<li><code>布局子控件</code>,即设置子控件的 <code>frame</code> 时,一般都写会写在- (void)<code>layoutSubviews;</code>上<pre><code>  当往父控件的 frame 发生改变时,iOS会自动调用 layoutSubviews 方法
+</code></pre></li>
+</ul>
+<h2 id="xib-">xib 的使用</h2>
+<ul>
+<li><p>加载方式 <br />
+<br />注意:加载后获取的是一个数组,则需要使用<code>firstObject</code> 或 <code>lastObject</code> 获取</p>
+<ul>
+<li><p>方式一</p>
+<pre><code class="lang-objc">  <span class="hljs-built_in">UIView</span> *carNewsView = [[[<span class="hljs-built_in">NSBundle</span> mainBundle] loadNibNamed:<span class="hljs-string">@"CarNews"</span> owner:<span class="hljs-literal">nil</span> options:<span class="hljs-literal">nil</span>] firstObject];
+carNewsView<span class="hljs-variable">.center</span> = CGPointMake(<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>, <span class="hljs-number">100</span>);
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:carNewsView];
+</code></pre>
+</li>
+<li><p>方式二</p>
+<pre><code class="lang-objc">UINib *nib = [UINib nibWithNibName:<span class="hljs-string">@"CarNews"</span> bundle:<span class="hljs-literal">nil</span>];
+<span class="hljs-built_in">NSArray</span> *views = [nib instantiateWithOwner:<span class="hljs-literal">nil</span> options:<span class="hljs-literal">nil</span>];
+<span class="hljs-built_in">UIView</span> *carNewsView2 = [views firstObject];
+carNewsView2<span class="hljs-variable">.center</span> = CGPointMake(<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>, <span class="hljs-number">250</span>);
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:carNewsView2];
+</code></pre>
+</li>
+</ul>
+</li>
+<li>xib 加载原理<pre><code>  跟直接用代码生成自定义控件,其实是一样的.只不过,在 xib 中,我们已经布局好子控件,只需要传数据进去即可
+</code></pre>例如:</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-preprocessor"># pragma mark - xib的加载原理</span>
+- (<span class="hljs-keyword">void</span>)loadNib{
+    XMGShopView *shopView = [[XMGShopView alloc] initWithCoder:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">UIImageView</span> *imageView = [[<span class="hljs-built_in">UIImageView</span> alloc] initWithCoder:<span class="hljs-literal">nil</span>];
+    imageView<span class="hljs-variable">.tag</span> = <span class="hljs-number">1</span>;
+    imageView<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> greenColor];
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span> = imageView;
+    [shopView addSubview:imageView];
+
+    <span class="hljs-comment">// ...</span>
+
+}
+</code></pre>
+<ul>
+<li>问题:为什么方式二使用的是 nib,而不是 xib?<br />
+查看应用程序的 Bundle<br />
+<br />
+<img src="images/Snip20160123_2.png" alt="浏览图片"></li>
+</ul>
+<p><br /><strong>xib 编译-运行后,变成了 nib!</strong></p>
+<p><br /></p>
+<h4 id="">方法</h4>
+<p>通过xib自定义控件, 一定会调用<code>initWithCoder:</code>和<code>awakeFromNib</code></p>
+<ul>
+<li>-(void)<code>awakeFromNib</code>;<pre><code>  当xib中的控件加载完毕的时候调用
+  作用: 设置子控件的属性   添加子控件
+</code></pre>例子:重写 awakeFromNib 方法</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)awakeFromNib{
+    [<span class="hljs-keyword">super</span> awakeFromNib];
+
+    <span class="hljs-comment">// 添加子控件</span>
+    UIToolbar *toolBar = [[UIToolbar alloc] init];
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.toolBar</span> = toolBar;
+    [<span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span> addSubview:toolBar];
+}
+</code></pre>
+<ul>
+<li>-(instancetype)<code>initWithCoder</code>:(NSCoder *)aDecoder;<pre><code>  xib 初始化的时候,就会自动调用这个方法(不常用)
+</code></pre></li>
+</ul>
+<h2 id="">执行动画</h2>
+<p>例子：</p>
+<pre><code class="lang-objc">[<span class="hljs-built_in">UIView</span> animateWithDuration:<span class="hljs-number">0.5</span> delay:<span class="hljs-number">1.0</span> options:UIViewAnimationOptionCurveLinear animations:^{
+        <span class="hljs-comment">//执行动画</span>
+        <span class="hljs-built_in">CGRect</span> tempFrame = <span class="hljs-keyword">self</span><span class="hljs-variable">.redView</span><span class="hljs-variable">.frame</span>;
+        tempFrame<span class="hljs-variable">.origin</span><span class="hljs-variable">.y</span> += <span class="hljs-number">100</span>;
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.redView</span><span class="hljs-variable">.frame</span> = tempFrame;
+
+    } completion:^(<span class="hljs-built_in">BOOL</span> finished) {
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.redView</span><span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> yellowColor];
+    }];
+</code></pre>
+<ul>
+<li>参数说明：<ul>
+<li><code>UIViewAnimationOptionCurveEaseInOut</code><pre><code>  开始和结束比较慢,中间比较快
+</code></pre></li>
+<li><code>UIViewAnimationOptionCurveEaseIn</code><pre><code>  开场比较慢,后面比较快
+</code></pre></li>
+<li><code>UIViewAnimationOptionCurveEaseOut</code><pre><code>  开场正常,结尾比较慢
+</code></pre></li>
+<li><code>UIViewAnimationOptionCurveLinear</code><pre><code>  线性----&gt; 匀速
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="uibutton">UIButton</h2>
+<h4 id="uibutton">自定义UIButton</h4>
+<p>若要改变按钮上tiitle和image默认位置，需要重写：</p>
+<ul>
+<li><code>titleRectForContentRect</code></li>
+<li><code>imageRectForContentRect</code>
+<br />或</li>
+<li><code>layoutSubviews</code></li>
+</ul>
+<p><br />
+若还需要进行其他的操作时，可以在initWithFrame上进行
+<br />例子：</p>
+<pre><code class="lang-objc"><span class="hljs-comment">// 设置对其方式</span>
+- (instancetype)initWithFrame:(<span class="hljs-built_in">CGRect</span>)frame{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">self</span> = [<span class="hljs-keyword">super</span> initWithFrame:frame]) {
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.titleLabel</span><span class="hljs-variable">.textAlignment</span> = NSTextAlignmentCenter;
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span><span class="hljs-variable">.contentMode</span> = UIViewContentModeScaleAspectFit;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+}
+
+
+<span class="hljs-comment">// 方式1:</span>
+<span class="hljs-comment">// 重写两个方法</span>
+<span class="hljs-comment">/*
+- (CGRect)titleRectForContentRect:(CGRect)contentRect{
+   return  CGRectMake(0, 0, 100, 60);
+}
+
+- (CGRect)imageRectForContentRect:(CGRect)contentRect{
+   return CGRectMake(100, 0, 50, 60);
+}
+ */</span>
+
+<span class="hljs-comment">// 方式2:</span>
+<span class="hljs-comment">// 重新布局子控件</span>
+- (<span class="hljs-keyword">void</span>)layoutSubviews{
+    [<span class="hljs-keyword">super</span> layoutSubviews];
+    <span class="hljs-comment">// 设置按钮的子控件的frame</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.titleLabel</span><span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">60</span>);
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span><span class="hljs-variable">.frame</span> = CGRectMake(<span class="hljs-number">100</span>, <span class="hljs-number">0</span>, <span class="hljs-number">50</span>, <span class="hljs-number">60</span>);
+}
+</code></pre>
+<h4 id="uibutton">UIButton内边距属性</h4>
+<ul>
+<li>contentEdgeInsets<pre><code>  内容内边距
+</code></pre></li>
+<li>imageEdgeInsets<pre><code>  图片内边距
+</code></pre></li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)viewDidLoad {
+    [<span class="hljs-keyword">super</span> viewDidLoad];
+<span class="hljs-comment">//    self.button.contentEdgeInsets = UIEdgeInsetsMake(10, 5, 0, 0);</span>
+<span class="hljs-comment">//    self.button.imageEdgeInsets = UIEdgeInsetsMake(5, 16, 0, 0);</span>
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.button</span><span class="hljs-variable">.titleEdgeInsets</span> = UIEdgeInsetsMake(<span class="hljs-number">10</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+}
+</code></pre>
+<h2 id="">图片拉伸</h2>
+<p>防止图片拉伸时，发生变形，使用以下方法对图片进行处理：<br />
+想法：<br />
+<strong>抠出一个小方块出来进行拉伸,使得图片的其他四角不会发生改变</strong></p>
+<ul>
+<li><p><code>resizableImageWithCapInsets</code></p>
+<pre><code class="lang-objc"><span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"chat_send_nor"</span>];
+  <span class="hljs-comment">// 作用: 根据传入需要保护的区域返回一张受保护的图片</span>
+  <span class="hljs-comment">// 抠出一个小方块出来进行拉伸,使得图片的其他四角不会发生改变</span>
+  <span class="hljs-built_in">UIEdgeInsets</span> edgeInsets = UIEdgeInsetsMake(image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> * <span class="hljs-number">0.5</span>, image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>, image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> * <span class="hljs-number">0.5</span> -<span class="hljs-number">1</span>, image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span> -<span class="hljs-number">1</span>);
+  <span class="hljs-comment">/*
+   UIImage *protectImage = [image resizableImageWithCapInsets:edgeInsets];
+   */</span>
+  <span class="hljs-comment">/*
+   UIImageResizingModeTile,  以平铺的方式进行拉伸,即用小方块一个一个平铺所有的空白
+   UIImageResizingModeStretch, 直接拉伸平铺,即直接拉伸小方块
+   */</span>
+  <span class="hljs-built_in">UIImage</span> *protectImage = [image resizableImageWithCapInsets:edgeInsets resizingMode:UIImageResizingModeTile];
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span><span class="hljs-variable">.image</span> = protectImage;
+</code></pre>
+</li>
+<li><p><code>stretchableImageWithLeftCapWidth</code>(其实是调用了上面的方法)</p>
+<pre><code class="lang-objc"><span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"chat_send_nor"</span>];
+  <span class="hljs-comment">// 这个方法，其实是调用了resizableImageWithCapInsets，自动帮我们做了以下的操作：</span>
+  <span class="hljs-comment">// rightCapWidth = width - leftCapWidth - 1</span>
+  <span class="hljs-comment">// bottomCapWidth = height - topCapWidth - 1</span>
+  <span class="hljs-built_in">UIImage</span> *protectImage = [image stretchableImageWithLeftCapWidth:image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span> topCapHeight:image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> *<span class="hljs-number">0.5</span>];
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.imageView</span><span class="hljs-variable">.image</span> = protectImage;
+</code></pre>
+</li>
+</ul>
+<p>可把这个方法放到写到UIImage的类拓展里面：</p>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#import <span class="hljs-title">&lt;UIKit/UIKit.h&gt;</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">UIImage</span> (<span class="hljs-title">XMGExtention</span>)</span>
+<span class="hljs-comment">/**
+ *  返回一张受保护的图片,使得图片拉伸或压缩不变形
+ *
+ *  @param imageName 图片的名称
+ *
+ *  @return 受保护的图片
+ */</span>
++ (instancetype)resizableImageWithImageName:(<span class="hljs-built_in">NSString</span> *)imageName;
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<pre><code class="lang-objc"><span class="hljs-preprocessor">#import <span class="hljs-title">"UIImage+XMGExtention.h"</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UIImage</span> (<span class="hljs-title">XMGExtention</span>)</span>
++(instancetype)resizableImageWithImageName:(<span class="hljs-built_in">NSString</span> *)imageName{
+   <span class="hljs-comment">// 创建图片对象</span>
+    <span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:imageName];
+    <span class="hljs-comment">// 图片的尺寸</span>
+    <span class="hljs-built_in">CGFloat</span> imageWidth = image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>;
+    <span class="hljs-built_in">CGFloat</span> imageHeight = image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> * <span class="hljs-number">0.5</span>;
+    <span class="hljs-keyword">return</span> [image stretchableImageWithLeftCapWidth:imageWidth topCapHeight:imageHeight];
+}
+<span class="hljs-keyword">@end</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../ui__01/README.html" class="navigation navigation-prev " aria-label="Previous page: UI 进阶_01"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ui_04_uiscrollview/README.html" class="navigation navigation-next " aria-label="Next page: UI 04 UIScrollView"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
