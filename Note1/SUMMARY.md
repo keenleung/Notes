@@ -44,4 +44,8 @@
        * [设置操作依赖](nsoperationqueue03.md)
    * [NSOperation实现线程间通信(合并图片)-掌握](multithreading/13.md)
    * [多图下载综合案例-掌握](multithreading/14.md)
+   * [SDWebImage框架](multithreading/sdwebimage.md)
+   * [NSCache简单介绍](multithreading/nscache.md)
+   * [位移枚举](multithreading/enum.md)
+   * [Runloop](multithreading/runloop.md)
 
