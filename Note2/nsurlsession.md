@@ -8,7 +8,7 @@
         - 4.根据会话对象创建 task
         - 5.执行 task
         - 6.解析数据
-    - 会话对象的获取:
+    - 会话对象的获取 : (这是一个单例对象)
         - NSURLSession *session = [NSURLSession sharedSession];
     - 根据会话对象创建 task
         - 创建方式有
@@ -17,6 +17,11 @@
         - completionHandler : 该block块在子线程中调用
     - 任务的执行:
         - 调用 -resume 方法
+    - 关于task
+        - NSURLSessionTask是一个抽象类，本身不能使用，只能使用它的子类
+            - NSURLSessionDataTask
+            - NSURLSessionUploadTask
+            - NSURLSessionDownloadTask
 
 ## 1.发送 GET 请求
 ####方式一 : dataTaskWithRequest
