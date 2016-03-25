@@ -22,4 +22,82 @@
             删除缓存中指定键名的对象
     - -(void)removeAllObjects;
             删除缓存中所有的对象
+
+##3. 示例代码
+```objc
+#import "ViewController.h"
+
+#define CacheObjNumber 10
+#define CacheCostNumber 2
+
+@interface ViewController ()<NSCacheDelegate>
+
+// 缓存
+@property (nonatomic, strong) NSCache *cache;
+
+@end
+
+@implementation ViewController
+
+// 懒加载
+- (NSCache *)cache{
+    if (!_cache) {
+        _cache = [[NSCache alloc] init];
+
+        // 设置成本限制
+        // 缓存空间的最大总成本，超出上限会自动回收对象。默认值为0，表示没有限制
+        _cache.totalCostLimit = 10;
+
+        // 设置能够缓存的对象的最大数量
+        // 能够缓存的对象的最大数量。默认值为0，表示没有限制
+        _cache.countLimit = 8;
+
+        // 设置代理,监听回收过程
+        _cache.delegate = self;
+    }
+    return _cache;
+}
+
+
+// 存
+- (IBAction)saveButtonDidClicked:(id)sender {
+
+    for (int i = 0; i<CacheObjNumber; i++) {
+
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Snip20160316_21.png" ofType:nil];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+
+        //[self.cache setObject:data forKey:@(i)];
+        [self.cache setObject:data forKey:@(i) cost:CacheCostNumber];
+
+        NSLog(@"存数据 ... %i", i);
+    }
+    NSLog(@"++++++++++++++++++++++++");
+}
+
+// 取
+- (IBAction)getButtonDidClicked:(id)sender {
+
+    // 检查缓存
+    for (int i = 0; i<CacheObjNumber; i++) {
+
+        NSData *data = [self.cache objectForKey:@(i)];
+        if (data) {
+            NSLog(@"取数据 ... %i", i);
+        }
+    }
+}
+
+
+
+#pragma mark - NSCacheDelegate
+// 当开启回收过程的时候回调用
+// 回收数据的时候, 是从最旧的数据开始
+- (void)cache:(NSCache *)cache willEvictObject:(id)obj{
+
+    NSLog(@"开启回收 --- %zd, %@", [obj length], [obj class]);
+}
+
+@end
+```
 ===========================================================================================

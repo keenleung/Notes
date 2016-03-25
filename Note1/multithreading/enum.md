@@ -2,25 +2,27 @@
 
 ##1. 常见的几种枚举形式
 ```objc
-//经典C语言风格的枚举
+// 经典C语言风格的枚举 (敲 enumdef)
 typedef enum : NSUInteger {
-    XMGTypeTop,
-    XMGTypeBottom,
-} XMGType;
+    ColorRed,
+    ColorBlue,
+    ColorYellow,
+} Color;
 
-//OC风格的枚举
-typedef NS_ENUM(NSUInteger,XMGDemoType) {
-    XMGDemoTypeTop,
-    XMGDemoTypeBottom,
+// OC风格的枚举 (敲nsenum)
+typedef NS_ENUM(NSUInteger, Sex) {
+    SexMale,
+    SexFemale,
 };
 
-//位移枚举
-//如果发现位移枚举的第一个枚举值!=0,那么你可以默认传0,表示性能最高(因为所有的判断条件都不满足, 直接跳到程序的末尾)
-typedef NS_OPTIONS(NSUInteger, XMGActionType) {
-    XMGActionTypeTop = 1 << 0, //1
-    XMGActionTypeBottom = 1 << 1,
-    XMGActionTypeLeft = 1 << 2,
-    XMGActionTypeRight = 1 << 3,
+// 位移枚举(敲nsoption)
+// 可以通过 | 传入多个数值
+// 如果发现位移枚举的第一个枚举值!=0,那么你可以默认传0,表示性能最高(因为所有的判断条件都不满足, 直接跳到程序的末尾)
+typedef NS_OPTIONS(NSUInteger, ActionType) {
+    ActionTypeTop = 1 << 0, // 1
+    ActionTypeBottom = 1 << 1, // 2
+    ActionTypeLeft = 1 << 2, // 4
+    ActionTypeRight = 1 << 3, // 8
 };
 ```
 
