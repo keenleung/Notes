@@ -11,7 +11,10 @@
 ####1.发送消息
 *	方法调用的本质，就是让对象发送消息。
 *	objc_msgSend,只有对象才能发送消息，因此以objc开头.
-*	使用`消息机制`前提，必须导入#import <objc/message.h>
+*	使用`消息机制`前提，必须导入
+```objc
+#import<objc/message.h>
+```
 *	消息机制简单使用
 *	clang -rewrite-objc main.m 查看最终生成代码
 
