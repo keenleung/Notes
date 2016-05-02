@@ -19,4 +19,9 @@
 * [注意点2](142/README.md)
 * [imageView缩放](15/README.md)
 * [WebKit的使用](webkit/README.md)
+* [本地化](17/README.md)
+   * [App 名称](17/app.md)
+   * [控件](17/2.md)
+* [图片加载进度](18/README.md)
+* [isEqual和isEqualToString](isequalisequaltostring/README.md)
 

@@ -1,6 +1,6 @@
 ####缩放 scrollView 上的 imageView
 
-- 1.设置 scrllView 的代理，并设置 scrollView 的缩放比例
+- 1.设置 scrollView 的代理，并设置 scrollView 的缩放比例
 *![显示图片](../images/15-1.jpg)*
 
 - 2.遵守协议UIScrollViewDelegate
